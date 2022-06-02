@@ -1,0 +1,18 @@
+#!/bin/bash
+#get the number of cores
+cores=$(nproc --all)
+echo "Detected that cpu has $cores cores"
+echo "Press crl-c to cancel now or during the test."
+echo "Please press ENTER to start the test."
+read
+echo "starting test"
+for ((i = 0 ; i < $cores ; i++)); do
+echo "created process $i"
+dd if=/dev/zero of=/dev/null &
+done
+echo "starting htop"
+htop --readonly
+echo "interupt"
+echo "killing dd processes"
+killall dd
+echo "done"
