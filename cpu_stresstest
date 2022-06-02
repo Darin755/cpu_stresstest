@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #get the number of cores
 cores=$(nproc --all)
 echo "Detected that cpu has $cores cores"
