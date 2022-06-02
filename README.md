@@ -4,11 +4,11 @@
 
  - It is very simple to use. Just run the script. 
  
-  - To run:
+   - To run:
   
-  - chmod +x cpu_stresstest # make it executable
+     - chmod +x cpu_stresstest # make it executable
   
-  - ./cpu_stresstest # run it
+     - ./cpu_stresstest # run it
  
  - When it starts it will open htop. 
 
