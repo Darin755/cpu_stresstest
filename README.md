@@ -14,4 +14,4 @@
 
  - It runs forever until you press crl-c to close htop
 
- - If you close the window the test will continue to run. To stop the test run killall dd
+ - If you close the window the test will continue to run. **To stop the test run killall dd**
